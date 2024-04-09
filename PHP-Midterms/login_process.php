@@ -30,6 +30,16 @@ require_once('connect.php');
         .center-image {
             margin: 0 auto;
         }
+        .logout-btn {
+            padding: 10px 20px;
+            background-color: white;
+            color: #76885B;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 20px;
+        }
     </style>
 </head>
     <div class="login-box">
@@ -52,6 +62,9 @@ require_once('connect.php');
             }
         }
         ?>
+            <form action="login.php" method="POST">
+            <button type="submit" class="logout-btn">Retry</button>
+        </form>
     </div>
 </body>
 </html>
