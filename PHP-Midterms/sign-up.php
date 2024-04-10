@@ -35,6 +35,42 @@
         h3{
             color: #627254; 
         }
+        a {
+            color: #627254; 
+            text-decoration: none;
+        }
+        /* Bubble animations */
+@keyframes bubble {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+.bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: bubble 10s infinite linear;
+    z-index: 0;
+}
+
+/* You can adjust the number of bubbles and their positions as needed */
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+    left: 20%;
+    animation-duration: 10s;
+}
+
+/* Add more bubble definitions here */
     </style>
 </head>
     <div class="signup-box">
@@ -43,6 +79,7 @@
             <h3>PASSWORD:</h3><input type="password" name="password" placeholder="Password" required><br>
             <button type="submit">Sign Up</button>
         </form>
+        <p>Already have an account? <a href="login.php">Log In</a></p>
     </div>
 </body>
 </html>

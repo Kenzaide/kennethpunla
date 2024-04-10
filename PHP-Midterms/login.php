@@ -35,6 +35,10 @@
         h3{
             color: #627254; 
         }
+        a {
+            color: #627254; 
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +48,7 @@
             <h3>PASSWORD:</h3><input type="password" name="password" placeholder="Password" required><br>
             <button type="submit">Log In</button>
         </form>
+        <p>Don't have an account? <a href="sign-up.php">Sign-up</a></p>
     </div>
 </body>
 </html>
