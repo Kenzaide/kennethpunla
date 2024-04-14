@@ -11,7 +11,10 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #EEEEEE;
+            background-image: url('stacked-waves-haikei.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .login-box {
             background-color: white;

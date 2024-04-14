@@ -8,6 +8,10 @@
         body, html {
             height: 100%;
             margin: 0;
+            background-image: url('stacked-waves-haikei.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .outer-box {
@@ -15,7 +19,6 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            background-color: #EEEEEE; 
         }
 
         .inner-box {
